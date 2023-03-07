@@ -299,7 +299,7 @@
                         <Font name="Gotham Medium" size="51.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" prefHeight="75.0" prefWidth="89.0" text="-" textFill="WHITE">
+                  <Label alignment="CENTER" prefHeight="75.0" prefWidth="89.0" style="-fx-font-size: 51; -fx-font-family: &quot;&quot;Gotham Medium&quot;;" text="-" textFill="WHITE">
                      <font>
                         <Font name="Gotham Medium" size="51.0" />
                      </font>

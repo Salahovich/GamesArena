@@ -2,7 +2,6 @@ package com.games.connect4;
 
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -18,7 +17,6 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.scene.transform.Scale;
 import javafx.util.Duration;
 
 public class Connect4Controller implements Initializable{
@@ -84,6 +82,8 @@ public class Connect4Controller implements Initializable{
     private void resetColor(VBox col){
         col.setBackground(new Background(new BackgroundFill(Color.valueOf("#4f0a56"), null, null)));
     }
+
+    // WinningCells util functions
     private void colorWinningCells(){
         for(int[] cell : game.getWinningCells()){
             Label currLabel = columns.get(cell[1])[cell[0]];
@@ -111,6 +111,7 @@ public class Connect4Controller implements Initializable{
             scale.stop();
         }
     }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         levels.getItems().addAll(levelString);
@@ -130,6 +131,7 @@ public class Connect4Controller implements Initializable{
 
     }
 
+    @FXML
     public void resetGame(){
         game = new Connect4Engine();
         for(Label[] arr : columns){

@@ -1,7 +1,6 @@
 package com.games.connect4;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import javafx.scene.paint.Color;
@@ -17,6 +16,7 @@ public class Connect4Engine{
     private List<int[]> winningCells; 
     private int gameTurns = boardSize*boardSize;
     private boolean end;
+
 
     public Connect4Engine(){
         board = new char[boardSize][boardSize];
