@@ -107,6 +107,8 @@ public class Connect4Controller implements Initializable{
     }
     private void stopAnimation(){
         for(ScaleTransition scale : animation){
+            if(scale == null)
+                continue;
             scale.jumpTo(Duration.ZERO);
             scale.stop();
         }

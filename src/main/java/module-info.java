@@ -10,4 +10,7 @@ module com.games {
 
     opens com.games.connect4 to javafx.fxml;
     exports com.games.connect4;
+
+    opens com.games.eightpuzzle to javafx.fxml;
+    exports com.games.eightpuzzle;
 }
