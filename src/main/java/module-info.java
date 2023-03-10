@@ -13,4 +13,7 @@ module com.games {
 
     opens com.games.eightpuzzle to javafx.fxml;
     exports com.games.eightpuzzle;
+
+    opens com.games.mines to javafx.fxml;
+    exports com.games.mines;
 }

@@ -21,14 +21,16 @@ public class App extends Application {
         
         stage.setScene(scene);
         stage.setTitle("Games Arena");
-        stage.setResizable(false);
+        //stage.setResizable(false);
         stage.show();
+       
     }
         
 
 
     public static void main(String[] args) {
         launch();
+       
     }
 
 }
